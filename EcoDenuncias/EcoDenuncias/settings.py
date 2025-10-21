@@ -60,6 +60,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'EcoDenuncias.urls'
 
+LOGIN_URL = '/usuario/login/'
+LOGIN_REDIRECT_URL = '/usuario/dashboard/'
+LOGOUT_REDIRECT_URL = '/usuario/login/'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
